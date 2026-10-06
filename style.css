@@ -7,8 +7,16 @@ body{
 }
 
 header{
-    border: double 3px red;
+    border-bottom: double 3px red;
     padding: 25px;
+    font-size: 32px;
+    color: antiquewhite;
+}
+
+section{
+    background-color: darkblue;
+    padding-bottom: 80px;
+    padding-top: 80px;
 }
  
 h1{
