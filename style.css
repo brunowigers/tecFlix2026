@@ -3,4 +3,16 @@ body{
     color: aqua;
      
        font-family: "Funnel Sans", sans-serif;
+       margin: 0px;
+}
+
+header{
+    border: double 3px rgb(red green blue / alpha);
+}
+ 
+h1{
+    font-size: 40px;
+}
+p{
+    font-size: 20px;
 }
