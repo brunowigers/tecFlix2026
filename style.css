@@ -1,33 +1,67 @@
-body{
+body {
     background-color: black;
     color: aqua;
-     
-       font-family: "Funnel Sans", sans-serif;
-       margin: 0px;
+    font-family: "Funnel Sans", sans-serif;
+    margin: 0px;
 }
 
-header{
+header {
     border-bottom: double 3px red;
     padding: 25px;
     font-size: 32px;
     color: antiquewhite;
 }
 
-section{
+/* Seção principal do vídeo */
+section {
     background-color: darkblue;
     padding-bottom: 80px;
     padding-top: 80px;
-    display:flex ;
+    display: flex;
     justify-content: center;
+    align-items: center;
 }
 
-.chamada-texto{
+.chamada-texto {
     margin-right: 5%;
 }
- 
-h1{
+
+h1 {
     font-size: 40px;
 }
-p{
+
+p {
     font-size: 20px;
+}
+
+/* Ajuste para o vídeo não estourar a tela em celular */
+iframe {
+    max-width: 100%;
+}
+
+/* --- AQUI ESTÁ A PARTE QUE ARRUMA AS IMAGENS --- */
+
+/* Ajusta a seção das categorias */
+.categoria {
+    display: block; /* Deixa o título em cima e as fotos embaixo */
+    padding: 20px;
+}
+
+.categoria h2 {
+    color: antiquewhite;
+}
+
+/* Alinha as imagens uma do lado da outra estilo Netflix */
+.categoria-videos {
+    display: flex;
+    gap: 15px; /* Espaço entre cada imagem */
+    overflow-x: auto; /* Se a tela for pequena, cria barrinha de rolagem pro lado */
+}
+
+/* Deixa todas as capas do mesmo tamanho certinho */
+.categoria-videos img {
+    height: 200px; /* Altura padrão para todas */
+    width: 140px;  /* Largura padrão */
+    object-fit: cover; /* Não deixa a foto esticar ou ficar deformada */
+    border-radius: 8px; /* Arredonda as pontinhas das fotos */
 }
